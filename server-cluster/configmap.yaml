@@ -1,5 +1,6 @@
 kind: ConfigMap
 metadata:
+  namespace: default
   name: nginx-load-app-conf
 apiVersion: v1
 data:
@@ -18,6 +19,7 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
+  namespace: default
   name: nginx-load-conf
 data:
   nginx.conf: |
@@ -50,6 +52,7 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
+  namespace: default
   name: binary
 data:
   100kb.bin: |
